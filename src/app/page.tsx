@@ -5,7 +5,6 @@ import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact"
 import About from "@/components/About";
-import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
