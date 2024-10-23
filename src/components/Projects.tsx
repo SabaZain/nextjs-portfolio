@@ -1,7 +1,7 @@
 import React from 'react'
 import Heading from "./Heading";
 import Card from "./Card"
-import Link from "next/link"
+
 
 
 const data = [
