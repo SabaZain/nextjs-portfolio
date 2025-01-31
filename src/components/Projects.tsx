@@ -43,7 +43,7 @@ const data = [
         id: 4,
         title: "Todo App",
         desc:  "A Next.JS app helps users to manage tasks easily and enhance productivity.",
-        img:   "/todoappnextjs.jpg",
+        img:   "/todo-app.jpg",
         tags:  ["CSS", "Node", "Typescript", "Next.JS"],
         link: "https://todoapp-nextjs-five.vercel.app/"
     },
