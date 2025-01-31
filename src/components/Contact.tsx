@@ -9,7 +9,7 @@ const Contact = () => {
   const [message, setMessage] = useState('');
   const [responseMessage, setResponseMessage] = useState('');
 
-  const handleSubmit = (e:any) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setResponseMessage(`Thankyou, ${name}! Your message has been sent.`);
 
@@ -47,7 +47,7 @@ const Contact = () => {
                 <label htmlFor='email'>Email</label>
                 <input 
                 type="text"
-                className='h-[40px bg-transparent border border-slate-500'
+                className='h-[40px] bg-transparent border border-slate-500'
                 id='email'
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
