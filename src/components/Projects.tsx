@@ -108,7 +108,7 @@ const data = [
         title: "Hackathon Project",
         desc:  "E-Commerce Website in Next.JS. Used API & Data fetched from Sanity. ",
         img:   "/hackathonproject.jpg",
-        tags:  ["Tailwind CSS", "Node", "Typescript", "Next.JS"],
+        tags:  ["Tailwind CSS", "Sanity", "Typescript", "Next.JS"],
         link: "https://api-and-sanity.vercel.app/"
     },
 ];
