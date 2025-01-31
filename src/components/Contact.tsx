@@ -32,6 +32,7 @@ const Contact = () => {
             </div>
         </div>
         <div className='space-y-8'>
+          <form onSubmit={handleSubmit}>
             <div className='flex flex-col gap-1' data-aos="zoom-in-up">
                 <label htmlFor='name'>Name</label>
                 <input 
@@ -46,7 +47,7 @@ const Contact = () => {
             <div className='flex flex-col gap-1' data-aos="zoom-in-up">
                 <label htmlFor='email'>Email</label>
                 <input 
-                type="text"
+                type="email"
                 className='h-[40px] bg-transparent border border-slate-500'
                 id='email'
                 value={email}
@@ -65,14 +66,14 @@ const Contact = () => {
                 />
             </div>
             <button 
-            onClick={handleSubmit}
-            className='bg-green-800 text-xl p-2 border rounded-sm' 
+            type="submit"
+            className='bg-green-800 text-xl p-2 mt-2 border rounded-sm' 
             data-aos="zoom-in-up"
             >
             Send
             </button>
-            {
-              responseMessage && (
+            </form>
+            {responseMessage && (
                 <div className='mt-4 text-green-800'>
                   {responseMessage}
                 </div>
