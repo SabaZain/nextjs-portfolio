@@ -20,7 +20,7 @@ const Contact = () => {
             <div className='flex flex-col gap-1' data-aos="zoom-in-up">
                 <label htmlFor='name'>Name</label>
                 <input type="text"
-                className='h-[40px bg-transparent border border-slate-500'
+                className='h-[40px] bg-transparent border border-slate-500'
                 id='name'/>
             </div>
 

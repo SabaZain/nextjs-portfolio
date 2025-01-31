@@ -63,6 +63,54 @@ const data = [
         tags:  ["CSS", "Node", "Typescript", "Next.JS"],
         link: "https://perfumewebsite-nextjs.vercel.app/"
     },
+    {
+        id: 7,
+        title: "Figma Design",
+        desc:  "Figma Design in Next.JS using Tailwind CSS.",
+        img:   "/figmadesign.jpg",
+        tags:  ["Tailwind CSS", "Node", "Typescript", "Next.JS"],
+        link: "https://assignment-figma2.vercel.app/"
+    },
+    {
+        id: 8,
+        title: "Dynamic Routing",
+        desc:  "Dynamic Routing in Next.JS. Created Clientside & Serverside Data Fetching.",
+        img:   "/dynamicrouting.jpg",
+        tags:  ["Tailwind CSS", "Node", "Typescript", "Next.JS"],
+        link: "https://assignment9-dynamicrouting.vercel.app/"
+    },
+    {
+        id: 9,
+        title: "Blog Website",
+        desc:  "Blog Website in Next.JS using Tailwind CSS. Data fetched from Sanity",
+        img:   "/blogwebsite-sanity.jpg",
+        tags:  ["Tailwind CSS", "Sanity", "Typescript", "Next.JS"],
+        link: "https://sanityblogwebsite-psi.vercel.app/"
+    },
+    {
+        id: 10,
+        title: "Blog Website",
+        desc:  "Blog Website in Next.JS. Created components & different blogs pages.",
+        img:   "/blogwebsite.jpg",
+        tags:  ["Tailwind CSS", "Node", "Typescript", "Next.JS"],
+        link: "https://blogwebsite-lime.vercel.app/"
+    },
+    {
+        id: 11,
+        title: "Household",
+        desc:  "E-Commerce Website in Next.JS. Created components & different pages.",
+        img:   "/ecommercewebsite.jpg",
+        tags:  ["Tailwind CSS", "Node", "Typescript", "Next.JS"],
+        link: "https://household-ecommercewebsite.vercel.app/"
+    },
+    {
+        id: 12,
+        title: "Hackathon Project",
+        desc:  "E-Commerce Website in Next.JS. Used API & Data fetched from Sanity. ",
+        img:   "/hackathonproject.jpg",
+        tags:  ["Tailwind CSS", "Node", "Typescript", "Next.JS"],
+        link: "https://api-and-sanity.vercel.app/"
+    },
 ];
 
 const Projects = () => {

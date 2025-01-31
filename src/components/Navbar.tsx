@@ -18,7 +18,7 @@ const Navbar = () => {
           <IoMenu size={30} />
         </div>
         
-            <ul className='gap-5 lg:gap-14  hidden md:flex'>
+            <ul className='gap-5 lg:gap-14  hidden md:flex lg:flex'>
                 <li className='menuLink hover:text-blue-900'><a href='#home'>Home</a></li>
                 <li className='menuLink hover:text-blue-900'><a href='#about'>About</a></li>
                 <li className='menuLink hover:text-blue-900'><a href='#education&skills'>Education & Skills</a></li>
