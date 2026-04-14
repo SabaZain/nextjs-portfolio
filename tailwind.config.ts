@@ -10,7 +10,18 @@ const config: Config = {
     extend: {
       container : {
         center: true,
-        padding: "15px"
+        padding: {
+          DEFAULT: "1rem",
+          sm: "2rem",
+          md: "3rem",
+          lg: "4rem",
+        },
+        screens: {
+          sm: "640px",
+          md: "768px",
+          lg: "1024px",
+          xl: "1280px",
+        },
       },
       colors: {
         accent: "#08E95E"

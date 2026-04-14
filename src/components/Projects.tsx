@@ -12,8 +12,8 @@ const data = [
         img:   "/registrationformhtml.jpg",
         tags:  ["HTML"],
         link: "https://student-registration-form-lemon.vercel.app/"
-        
-        
+
+
     },
     {
         id: 1,
@@ -115,20 +115,20 @@ const data = [
 
 const Projects = () => {
   return (
-    <div id="projects" className='container pt-32 text-red-700 font-semibold'>
+    <div id="projects" className='container pt-20 sm:pt-32 px-4 text-red-700 font-semibold'>
         <Heading title='My Projects'/>
-        <div className='grid gap-10 xl:gap-0 xl:gap-y-10 md:grid-cols-2 lg:grid-cols-3 place-items-center'>
-            {data.map((el) => (<Card 
+        <div className='grid gap-10 xl:gap-0 xl:gap-y-10 sm:grid-cols-2 lg:grid-cols-3 place-items-center'>
+            {data.map((el) => (<Card
             key={el.id}
             title={el.title}
             desc={el.desc}
             img={el.img}
             tags={el.tags}
             link={el.link || '#'}
-            
+
             />))}
         </div>
-      
+
     </div>
   )
 }
