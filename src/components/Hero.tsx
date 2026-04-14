@@ -23,7 +23,7 @@ const Hero = () => {
           {/* Text Content */}
           <div className='text-white font-semibold flex flex-col items-center gap-3 px-3 text-center pb-8'>
               <div className='space-y-1' data-aos="zoom-in-up">
-                  <p className='text-xl'>Hi, I'm</p>
+                  <p className='text-xl'>Hi, I&apos;m</p>
                   <p className='text-3xl'>Saba Ali Zain</p>
                   <p className='text-xl text-blue-400'>Web Developer</p>
               </div>
@@ -57,7 +57,7 @@ const Hero = () => {
           <div className='hidden lg:block'></div>
           <div className='text-white font-semibold flex flex-col justify-center gap-4 sm:gap-6 px-3 sm:px-0'>
               <div className='space-y-1 sm:space-y-2' data-aos="zoom-in-up">
-                  <p className='text-xl sm:text-2xl md:text-3xl'>Hi, I'm</p>
+                  <p className='text-xl sm:text-2xl md:text-3xl'>Hi, I&apos;m</p>
                   <p className='text-3xl sm:text-5xl md:text-6xl lg:text-7xl'>Saba Ali Zain</p>
                   <p className='text-xl sm:text-2xl md:text-3xl text-blue-400'>Web Developer</p>
               </div>
