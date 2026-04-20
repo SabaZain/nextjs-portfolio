@@ -4,81 +4,83 @@ import Image from 'next/image'
 
 const Hero = () => {
   return (
-    <>
-      {/* Mobile view - image as foreground element, text below */}
-      <div id="hero" className='sm:hidden min-h-screen bg-gray-900'>
-       <Navbar />
-       <div className='container flex flex-col items-center min-h-screen pt-4'>
-          {/* Profile Image */}
-          <div className='w-48 h-48 sm:w-56 sm:h-56 rounded-full overflow-hidden border-4 border-blue-400 mx-auto mb-6' data-aos="zoom-in-up">
-            <Image
-              src="/portfoliopic.jpg"
-              alt="Saba Ali Zain"
-              width={200}
-              height={200}
-              className='w-full h-full object-cover'
-            />
-          </div>
-          
-          {/* Text Content */}
-          <div className='text-white font-semibold flex flex-col items-center gap-3 px-3 text-center pb-8'>
-              <div className='space-y-1' data-aos="zoom-in-up">
-                  <p className='text-xl'>Hi, I&apos;m</p>
-                  <p className='text-3xl'>Saba Ali Zain</p>
-                  <p className='text-xl text-blue-400'>Web Developer</p>
-              </div>
-              <p className='text-base text-gray-300' data-aos="zoom-in-up">
-                  I craft clean, user-friendly websites using modern technologies.
-              </p>
-              <p className='text-sm text-purple-400' data-aos="zoom-in-up">
-                  Next.js | React | TypeScript | Tailwind CSS
-              </p>
-              <div className='flex gap-3 flex-wrap justify-center' data-aos="zoom-in-up">
-                  <a href='#recent-projects' className='bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-md text-sm transition'>
-                      See My Work
-                  </a>
-                  <a href='#contact' className='border-2 border-white hover:bg-white hover:text-gray-900 text-white px-5 py-2.5 rounded-md text-sm transition'>
-                      Get in Touch
-                  </a>
-              </div>
-          </div>
-       </div>
+    <div id="home" className='relative overflow-hidden'>
+      <Navbar />
+      
+      {/* Background decoration */}
+      <div className='absolute top-0 right-0 -z-10 w-[500px] h-[500px] bg-blue-600/10 blur-[120px] rounded-full' />
+      <div className='absolute bottom-0 left-0 -z-10 w-[400px] h-[400px] bg-purple-600/10 blur-[100px] rounded-full' />
+
+      {/* Mobile view */}
+      <div className='sm:hidden min-h-screen pt-24 pb-12 flex flex-col items-center justify-center px-4'>
+        <div className='w-48 h-48 rounded-full overflow-hidden border-2 border-zinc-800 p-2 mb-8 shadow-2xl bg-zinc-900' data-aos="zoom-in">
+          <Image
+            src="/portfoliopic.jpg"
+            alt="Saba Ali Zain"
+            width={200}
+            height={200}
+            className='w-full h-full object-cover rounded-full'
+          />
+        </div>
+        
+        <div className='text-center space-y-4'>
+            <div className='space-y-1' data-aos="fade-up">
+                <p className='text-blue-400 font-medium tracking-wide uppercase text-xs'>Available for opportunities</p>
+                <h1 className='text-4xl font-bold tracking-tight text-white'>Saba Ali Zain</h1>
+                <p className='text-xl text-zinc-400 font-medium'>Web Developer</p>
+            </div>
+            <p className='text-zinc-500 max-w-xs mx-auto text-sm leading-relaxed' data-aos="fade-up" data-aos-delay="100">
+                I craft clean, user-friendly websites using modern technologies like Next.js and Tailwind CSS.
+            </p>
+            <div className='flex flex-col gap-3 pt-4' data-aos="fade-up" data-aos-delay="200">
+                <a href='#recent-projects' className='btn-primary text-center'>See My Work</a>
+                <a href='#contact' className='btn-secondary text-center'>Get in Touch</a>
+            </div>
+        </div>
       </div>
 
       {/* Desktop view */}
-      <div id="hero" className='hidden sm:block min-h-screen bg-no-repeat bg-[url(/portfoliopic.jpg)] bg-cover'
-      style={{
-        backgroundSize: "25%",
-        backgroundPosition: "left 15% center"
-      }}
-      >
-       <Navbar />
-       <div className='container grid lg:grid-cols-2 h-[calc(100vh-60px)]'>
-          <div className='hidden lg:block'></div>
-          <div className='text-white font-semibold flex flex-col justify-center gap-4 sm:gap-6 px-3 sm:px-0'>
-              <div className='space-y-1 sm:space-y-2' data-aos="zoom-in-up">
-                  <p className='text-xl sm:text-2xl md:text-3xl'>Hi, I&apos;m</p>
-                  <p className='text-3xl sm:text-5xl md:text-6xl lg:text-7xl'>Saba Ali Zain</p>
-                  <p className='text-xl sm:text-2xl md:text-3xl text-blue-400'>Web Developer</p>
-              </div>
-              <p className='text-base sm:text-lg md:text-xl text-gray-200 max-w-lg' data-aos="zoom-in-up">
-                  I craft clean, user-friendly websites using modern technologies.
-              </p>
-              <p className='text-sm sm:text-base md:text-lg text-purple-400' data-aos="zoom-in-up">
-                  Next.js | React | TypeScript | Tailwind CSS
-              </p>
-              <div className='flex gap-3 sm:gap-4 flex-wrap' data-aos="zoom-in-up">
-                  <a href='#recent-projects' className='bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 sm:px-6 sm:py-3 rounded-md text-sm sm:text-lg transition'>
-                      See My Work
-                  </a>
-                  <a href='#contact' className='border-2 border-white hover:bg-white hover:text-gray-900 text-white px-5 py-2.5 sm:px-6 sm:py-3 rounded-md text-sm sm:text-lg transition'>
-                      Get in Touch
-                  </a>
-              </div>
+      <div className='hidden sm:flex min-h-screen items-center pt-32'>
+        <div className='container mx-auto grid lg:grid-cols-2 gap-12 items-center'>
+          <div className='space-y-8 max-w-2xl'>
+            <div className='space-y-4' data-aos="fade-right">
+                <p className='text-blue-400 font-semibold tracking-widest uppercase text-sm'>Professional Portfolio</p>
+                <h1 className='text-5xl md:text-7xl font-bold tracking-tighter text-white leading-[1.1]'>
+                  Building Digital <br />
+                  <span className='text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500'>
+                    Experiences.
+                  </span>
+                </h1>
+                <p className='text-2xl text-zinc-400 font-medium'>Saba Ali Zain — Web Developer</p>
+            </div>
+            
+            <p className='text-lg text-zinc-500 leading-relaxed' data-aos="fade-right" data-aos-delay="100">
+                Focused on creating high-performance, accessible, and beautiful web applications 
+                using React, Next.js, and TypeScript.
+            </p>
+            
+            <div className='flex gap-4' data-aos="fade-right" data-aos-delay="200">
+                <a href='#recent-projects' className='btn-primary'>View Projects</a>
+                <a href='#contact' className='btn-secondary'>Contact Me</a>
+            </div>
           </div>
-       </div>
+
+          <div className='hidden lg:block relative' data-aos="fade-left">
+            <div className='relative w-[450px] h-[450px] mx-auto'>
+              <div className='absolute inset-0 bg-blue-600/20 rounded-3xl rotate-6 animate-pulse' />
+              <div className='absolute inset-0 bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800 shadow-2xl'>
+                <Image
+                  src="/portfoliopic.jpg"
+                  alt="Saba Ali Zain"
+                  fill
+                  className='object-cover grayscale hover:grayscale-0 transition-all duration-700'
+                />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </>
+    </div>
   )
 }
 

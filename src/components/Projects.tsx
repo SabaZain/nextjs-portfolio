@@ -115,9 +115,9 @@ const data = [
 
 const Projects = () => {
   return (
-    <div id="projects" className='container pt-20 sm:pt-32 px-4 text-red-700 font-semibold'>
-        <Heading title='My Projects'/>
-        <div className='grid gap-10 xl:gap-0 xl:gap-y-10 sm:grid-cols-2 lg:grid-cols-3 place-items-center'>
+    <div id="projects" className='container py-24 px-4'>
+        <Heading title='Other Projects'/>
+        <div className='grid gap-8 sm:grid-cols-2 lg:grid-cols-3'>
             {data.map((el) => (<Card
             key={el.id}
             title={el.title}
@@ -125,10 +125,8 @@ const Projects = () => {
             img={el.img}
             tags={el.tags}
             link={el.link || '#'}
-
             />))}
         </div>
-
     </div>
   )
 }
