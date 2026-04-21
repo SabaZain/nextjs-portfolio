@@ -14,12 +14,14 @@ interface propsType {
 const Card: React.FC<propsType> = ({ title, desc, img, tags, link, problemSolved}) => {
   return (
     <div className='group glass-card overflow-hidden hover:border-blue-500/50 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/10' data-aos="zoom-in-up">
-        <div className='relative aspect-video overflow-hidden rounded-xl'>
+        <div className='relative aspect-video overflow-hidden rounded-xl bg-zinc-800'>
             <Image 
               className='object-cover transition-transform duration-700 group-hover:scale-110'
               src={img} 
               fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               alt={title}
+              priority={false}
             />
             <div className='absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-4'>
                <Link href={link} className='w-full'>

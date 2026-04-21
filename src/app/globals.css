@@ -3,10 +3,12 @@
 @tailwind utilities;
 
 @layer base {
-    body {
-        @apply bg-black text-white antialiased;
+    html, body {
+        @apply bg-black text-white antialiased overflow-x-hidden;
         font-family: var(--font-geist-sans), system-ui, sans-serif;
         scroll-behavior: smooth;
+        width: 100%;
+        position: relative;
     }
     
     html {
