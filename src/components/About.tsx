@@ -31,7 +31,7 @@ const About = () => {
             the forefront of the ever-evolving web ecosystem.
           </p>
           <div className='pt-4'>
-            <a href='#contact' className='btn-primary inline-block'>Let&apos;s Work Together</a>
+            <a href='#contact' className='btn-primary'>Let&apos;s Work Together</a>
           </div>
         </div>
       </div>
