@@ -51,7 +51,7 @@ const Navbar = () => {
       <div className='absolute inset-0 bg-black/98 backdrop-blur-2xl' onClick={() => setIsOpen(false)}></div>
       <div className={`absolute top-0 right-0 h-full w-[280px] bg-zinc-900 border-l border-zinc-800 p-8 transform transition-transform duration-500 ease-out shadow-2xl ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
         <div className='flex justify-between items-center mb-12'>
-          <div className='text-xl font-bold text-white tracking-tight'>Navigation</div>
+          <div className='text-xl font-bold text-white tracking-tight'>Menu</div>
           <div className='cursor-pointer text-white hover:text-blue-400' onClick={() => setIsOpen(false)}>
             <IoClose size={32} />
           </div>
