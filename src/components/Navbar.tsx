@@ -43,20 +43,27 @@ const Navbar = () => {
           </ul>
         </div>
 
-        {/* Mobile Menu */}
-        {isOpen && (
-          <div className='md:hidden absolute top-full left-0 w-full bg-zinc-900 border-b border-zinc-800 p-6 animate-in slide-in-from-top duration-300'>
-            <ul className='flex flex-col gap-6 text-lg font-medium'>
-              <li><a href='#home' className='menuLink block' onClick={() => setIsOpen(false)}>Home</a></li>
-              <li><a href='#about' className='menuLink block' onClick={() => setIsOpen(false)}>About</a></li>
-              <li><a href='#education&skills' className='menuLink block' onClick={() => setIsOpen(false)}>Education</a></li>
-              <li><a href='#skills' className='menuLink block' onClick={() => setIsOpen(false)}>Skills</a></li>
-              <li><a href='#recent-projects' className='menuLink block' onClick={() => setIsOpen(false)}>Recent Projects</a></li>
-              <li><a href='#projects' className='menuLink block' onClick={() => setIsOpen(false)}>My Projects</a></li>
-              <li><a href='#contact' className='menuLink block' onClick={() => setIsOpen(false)}>Contact</a></li>
+        {/* Mobile Menu Overlay */}
+        <div className={`md:hidden fixed inset-0 z-50 transition-all duration-500 ${isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}>
+          <div className='absolute inset-0 bg-black/95 backdrop-blur-xl' onClick={() => setIsOpen(false)}></div>
+          <div className={`absolute top-0 right-0 h-full w-[280px] bg-zinc-900 border-l border-zinc-800 p-8 transform transition-transform duration-500 ease-out ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+            <div className='flex justify-between items-center mb-12'>
+              <div className='text-xl font-bold text-white'>Menu</div>
+              <div className='cursor-pointer text-white hover:text-blue-400' onClick={() => setIsOpen(false)}>
+                <IoClose size={32} />
+              </div>
+            </div>
+            <ul className='flex flex-col gap-8'>
+              <li><a href='#home' className='text-lg font-medium text-white hover:text-blue-400' onClick={() => setIsOpen(false)}>Home</a></li>
+              <li><a href='#about' className='text-lg font-medium text-white hover:text-blue-400' onClick={() => setIsOpen(false)}>About</a></li>
+              <li><a href='#education&skills' className='text-lg font-medium text-white hover:text-blue-400' onClick={() => setIsOpen(false)}>Education</a></li>
+              <li><a href='#skills' className='text-lg font-medium text-white hover:text-blue-400' onClick={() => setIsOpen(false)}>Skills</a></li>
+              <li><a href='#recent-projects' className='text-lg font-medium text-white hover:text-blue-400' onClick={() => setIsOpen(false)}>Recent Projects</a></li>
+              <li><a href='#projects' className='text-lg font-medium text-white hover:text-blue-400' onClick={() => setIsOpen(false)}>My Projects</a></li>
+              <li><a href='#contact' className='text-lg font-medium text-white hover:text-blue-400' onClick={() => setIsOpen(false)}>Contact</a></li>
             </ul>
           </div>
-        )}
+        </div>
       </div>
     </nav>
   );
